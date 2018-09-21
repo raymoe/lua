@@ -107,7 +107,7 @@ void luaD_throw (lua_State *L, int errcode) {
   }
 }
 
-
+//read
 int luaD_rawrunprotected (lua_State *L, Pfunc f, void *ud) {
   struct lua_longjmp lj;
   lj.status = 0;
@@ -488,6 +488,7 @@ struct SParser {  /* data to `f_parser' */
   const char *name;
 };
 
+//read
 static void f_parser (lua_State *L, void *ud) {
   int i;
   Proto *tf;
